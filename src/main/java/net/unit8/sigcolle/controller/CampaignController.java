@@ -109,7 +109,8 @@ public class CampaignController {
         Campaign model = new Campaign();
         model.setStatement(processor.markdownToHtml(form.getStatement()));
         model.setCreateUserId(principal.getUserId());
-
+        //model.setTitle() = ;
+        //model.setGoal() = ;
         CampaignDao campaignDao = domaProvider.getDao(CampaignDao.class);
         // TODO Databaseに登録する
 
